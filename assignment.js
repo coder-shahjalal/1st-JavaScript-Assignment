@@ -43,7 +43,7 @@ function tinyFriends(names) {
   let small = names[0];
   for (let i = 0; i < names.length; i++) {
     let currentName = names[i];
-    if (currentName > small) {
+    if (currentName.length < small.length) {
       small = currentName;
     }
   }
